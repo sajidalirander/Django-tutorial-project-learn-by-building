@@ -1,5 +1,10 @@
+# directories
 .venv_django/
 __pycache__/
+
+# files with extension
 *.pyc
+*.pdf
+
+# special 
 db.sqlite3
-.pdf
