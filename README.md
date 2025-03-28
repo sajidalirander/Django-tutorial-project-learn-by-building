@@ -1,15 +1,15 @@
 # Virtual environment
 
-Creating a virtual environment named `.venv`
+Creating a virtual environment named `.django_venv`
 
 ```
-python3 -m venv .venv
+python3 -m venv .django_venv
 ```
 
 Activate the environement
 
 ```
-source .venv/bin/activate
+source .django_venv/bin/activate
 ```
 
 Updating pip and installing django in virtual environment
@@ -25,13 +25,13 @@ Creating a new django project to the current working directory (`.` at the end):
 django-admin startproject <projectName> .
 ```
 
-The `<projectName>` is `defaultDjango`.
+The `<projectName>` is `django_tutorial`.
 
-It creates the following within `defaultDjango`:
+It creates the following within `django_tutorial`:
 
 1. `manage.py`: Django command-line administrative utility of the project. General syntex for running administrative commands `python manage.py <command> [optoins]`.
    For example, runining the project `python manage.py runserver`.
-2. A subfolder named `defaultDjango`, which contains the following files:
+2. A subfolder named `django_tutorial`, which contains the following files:
    > `__init__.py`: an empty file that tells Python, this folder is a Python package. 
    > `asgi.py` and `wsgi.py`: hooks for production web servers and **DO NOT MODIFY**. 
    > `settings.py` and `urls.py`: settings and table of contents which **CAN BE MODIFIED**.
@@ -40,7 +40,7 @@ It creates the following within `defaultDjango`:
 Direct to the project directory:
 
 ```
-cd defaultDjango/
+cd django_tutorial/
 ```
 
 Create an empty development database:
@@ -65,7 +65,7 @@ Performing system checks...
 
 System check identified no issues (0 silenced).
 March 28, 2025 - 03:55:13
-Django version 4.2.20, using settings 'defaultDjango.settings'
+Django version 4.2.20, using settings 'django_tutorial.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
 ```
